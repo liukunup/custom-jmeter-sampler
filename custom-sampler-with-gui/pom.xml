@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.liukunup</groupId>
+        <artifactId>jmeter</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>custom-com.liukunup.jmeter.sampler-with-gui</artifactId>
+    <packaging>jar</packaging>
+
+    <name>custom-com.liukunup.jmeter.sampler-with-gui</name>
+    <description>Demo project for Custom Sampler With Gui</description>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.apache.jmeter</groupId>
+            <artifactId>ApacheJMeter_core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.jmeter</groupId>
+            <artifactId>ApacheJMeter_java</artifactId>
+        </dependency>
+
+    </dependencies>
+
+</project>
