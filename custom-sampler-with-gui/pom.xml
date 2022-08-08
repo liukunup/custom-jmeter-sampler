@@ -11,10 +11,10 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>custom-com.liukunup.jmeter.sampler-with-gui</artifactId>
+    <artifactId>custom-sampler-with-gui</artifactId>
     <packaging>jar</packaging>
 
-    <name>custom-com.liukunup.jmeter.sampler-with-gui</name>
+    <name>custom-sampler-with-gui</name>
     <description>Demo project for Custom Sampler With Gui</description>
 
     <dependencies>
