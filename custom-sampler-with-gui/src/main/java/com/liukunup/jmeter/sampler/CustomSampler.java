@@ -16,8 +16,8 @@ public class CustomSampler extends AbstractSampler {
 
     private static final Logger logger = LoggerFactory.getLogger(CustomSampler.class);
 
-    private int param1 = 3;
-    private int param2 = 4;
+    private static int param1 = 3;
+    private static int param2 = 4;
 
     public CustomSampler() {
         // 初始化

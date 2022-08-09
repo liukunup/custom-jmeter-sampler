@@ -1,6 +1,7 @@
 package com.liukunup.jmeter.sampler.gui;
 
 import com.liukunup.jmeter.sampler.CustomSampler;
+import org.apache.jmeter.gui.util.HorizontalPanel;
 import org.apache.jmeter.gui.util.VerticalPanel;
 import org.apache.jmeter.samplers.gui.AbstractSamplerGui;
 import org.apache.jmeter.testelement.TestElement;
@@ -20,10 +21,12 @@ public class CustomSamplerGui extends AbstractSamplerGui {
 
     private static final Logger logger = LoggerFactory.getLogger(CustomSamplerGui.class);
 
-    private final JTextField param1 = new JTextField();
-    private final JTextField param2 = new JTextField();
+    private JTextField param1;
+    private JTextField param2;
 
     public CustomSamplerGui() {
+        super();
+
         // 初始化
         logger.info("public CustomSamplerGui()");
 
@@ -33,8 +36,22 @@ public class CustomSamplerGui extends AbstractSamplerGui {
         JPanel mainPanel = new VerticalPanel();
         add(mainPanel, BorderLayout.CENTER);
 
-        mainPanel.add(param1);
-        mainPanel.add(param2);
+        // 参数1 加上标签
+        param1 = new JTextField();
+        JLabel label1 = new JLabel("Param1: ");
+        label1.setLabelFor(param1);
+        JPanel panel1 = new HorizontalPanel();
+        panel1.add(label1, BorderLayout.WEST);
+        panel1.add(param1, BorderLayout.CENTER);
+        mainPanel.add(panel1);
+        // 参数2
+        param2 = new JTextField();
+        JLabel label2 = new JLabel("Param1: ");
+        label2.setLabelFor(param2);
+        JPanel panel2 = new HorizontalPanel();
+        panel2.add(label2, BorderLayout.WEST);
+        panel2.add(param2, BorderLayout.CENTER);
+        mainPanel.add(panel2);
     }
 
     @Override
